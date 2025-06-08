@@ -1,0 +1,926 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+  
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+
+  <title>Front-end Restaurant Website</title>
+
+    <link rel="canonical" href="https://codepen.io/internstreet/pen/mwQoJg">
+  
+  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat|Open+Sans|Open+Sans:300'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  
+<style>
+*
+{
+  box-sizing:border-box;
+}
+html
+{
+  overflow-x: hidden;
+}
+body
+{
+  width:100%;
+  height:100%;
+  margin:0;
+}
+#img-logo
+{
+  margin-top:-27px;
+  width:70%;
+  overflow:hidden;
+   transition: all 0.3s ease-in-out;
+}
+.container
+{
+  width:100%;
+  height:660px;
+  position:relative;
+  top:0;
+  left:0;
+  background-position:left top;
+  background-size:cover;
+  background-attachment:scroll;
+  background-repeat:no-repeat;
+  background-image:url('https://s2.postimg.org/nwsl0o20p/slide1.jpg');
+}
+#menu li a#about
+{
+  margin-left:80px;
+}
+#navbar
+{
+  margin:0;
+  background-color:rgba(0,0,0,0.2);
+  border:none;
+  height:70px;
+}
+.navbar-header
+{
+   transition: height 0.3s ease-in-out;
+  
+}
+
+#menu li a
+{
+  width:100%;
+  text-align:center;
+  margin-top:15px;
+  margin-left:40px;
+  color:white;
+  text-transform:uppercase;
+  font-family:'Montserrat',sans-serif;
+  font-weight:900;
+  font-size:0.90em;
+  letter-spacing:2px;
+  transition: all 0.3s ease-in-out;
+
+}
+#menu li a:hover
+{
+  text-decoration:underline;
+}
+
+nav.shrink a {
+  padding-top: 10px !important; 
+}
+nav.shrink #menu
+{
+ margin-left:-20px;
+ width:1370px;
+ background-color:rgba(0,0,0,0.4);
+}
+nav.shrink #menu li a
+{
+   z-index:-9999;
+
+}
+
+nav.shrink #img-logo
+{
+  position:relative;
+  top:5px;
+  max-height:50px;
+  
+}
+
+ .col-md-12
+{
+  font-family: 'Amatic SC',cursive;
+  position:absolute;
+  top:220px;
+  width:100%;
+  text-align:center;
+  color:white;
+}
+.title
+{
+  font-family: 'Amatic SC',cursive;
+  font-size:4em;
+  letter-spacing:20px;
+  word-spacing:10px;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.brief
+{
+  font-size:1.20em; 
+  font-weight:300;
+  font-family:'Open Sans',sans-serif;
+  background-color:rgba(0,0,0,0);
+}
+.col-md-12 #see
+{
+  background-color:black;
+  color:white;
+  font-family:'Montserrat';
+  border:none;
+  padding:20px;
+  margin:20px;
+  width:250px;
+  font-size:1em;
+}
+#about-us
+{
+  width:100%;
+  height:600px;
+}
+#about-us .intro-about
+{
+  background-color:white;
+  position:relative;
+  top:150px;  
+  left:90px;
+}
+
+#about-us #img-contain
+{
+  background-image:url('https://demo.kallyas.net/phaeton-restaurant-bar-pub/wp-content/uploads/sites/7/2016/07/about-chefs.jpg'); 
+  background-size:cover;
+  background-position:center;
+  width:674px;
+  height:600px;
+}
+.about
+{
+  width:100%;
+  font-family:'Amatic SC',cursive;
+  font-size:2.50em;
+  letter-spacing:5px;
+  font-weight:bold;
+}
+.desc
+{
+  margin-top:20px;
+  max-width:500px;
+  font-family:'Open Sans';
+  font-size:1.20em;
+  font-weight:500;
+  color:#333333;
+}
+#read-more
+{
+  background-color:transparent;
+  border:2px solid black;
+  height:60px;
+  padding:20px;
+  width:180px;
+  margin-top:25px;
+  color:black;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:0.85em;
+}
+
+.todays-speciality
+{
+  width:100%;
+  height:600px;
+  position:relative;
+}
+#today
+{
+  position:absolute;
+  background-attachment:fixed;
+  background-size:cover;
+  background-image:url('https://demo.kallyas.net/phaeton-restaurant-bar-pub/wp-content/uploads/sites/7/2016/06/section2.jpg');
+  width:100%;
+  height:100%; 
+}
+.today-title,.service-title,.tasty-title
+{
+  font-family: 'Amatic SC',cursive;
+  font-size:4em;
+  letter-spacing:20px;
+  word-spacing:10px;
+  font-weight:500;
+  text-transform:uppercase;
+  background-color:rgba(0,0,0,0);
+}
+.service-title,.tasty-title
+{
+  font-weight:600;
+}
+.today-brief,.service-brief
+{
+  font-size:1.30em; 
+  font-weight:300;
+  font-family:'Open Sans',sans-serif;
+  background-color:rgba(0,0,0,0);
+}
+
+.img-service
+{
+  margin-top:25px;
+}
+#menu-btn
+{
+  background-color:black;
+  color:white;
+  font-family:'Montserrat';
+  border:none;
+  padding:20px;
+  margin:20px;
+  width:250px;
+  font-size:1.30em;
+  text-transform:capitalize;
+}
+#menu-btn:focus,#read-more:focus,#see:focus
+{
+ outline:none; 
+}
+
+.food-items
+{
+  background-color:#efefef;
+  width:100%;
+  height:620px;
+}
+#menu-title
+{
+  margin-top:100px;
+  width:100%;
+  font-size:3em;
+  font-family:'Amatic SC';
+  font-weight:bold;
+  text-align:center;
+}
+.category
+{
+  float:right;
+  margin-top:60px;
+  font-family:'Montserrat';
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#cccccc;
+  font-size:0.95em;
+}
+
+.lists .list
+{
+  position:relative;
+  list-style:none;
+  color:#535353;
+  font-family:'Open Sans';
+  font-weight:bold;
+  width:430px;
+  margin-left:200px;
+  font-size:1.10em;
+}
+li span
+{
+  color:#cccccc;
+  font-weight:bold;
+  letter-spacing:1.5px;
+  
+}
+b
+{
+ color:#cc9900; 
+ font-family:'Montserrat';
+}
+.list li
+{
+  position:relative;
+  top:30px;
+  margin-bottom:15px;
+}
+
+#delivery
+{
+ width:100%;
+ height:520px;
+ position:relative;
+}
+.pic
+{ 
+  position:relative;
+  top:150px;
+  width:650px;
+  margin-left:17px;
+  background-image:url('https://demo.kallyas.net/phaeton-restaurant-bar-pub/wp-content/uploads/sites/7/2016/06/delivery.jpg');
+  background-size:cover;
+  background-position:center;
+  height:500px;
+}
+
+#service
+{
+  width:100%;
+  height:650px;
+  background-image: url('https://s23.postimg.org/ougvldo0b/bestservice.jpg');
+  background-size:cover;
+  background-position:center center;
+  position:relative;
+  transform: translate3d(0px, 120px, 0px);
+  z-index:-1;
+}
+#arrangments
+{
+  width:100%;
+  position:relative;
+  
+}
+
+.event-mgmt
+{
+  position:relative;
+  width:430px;
+  height:500px;
+  top:180px;
+  left:150px;
+  text-align:center;
+}
+.img-bg > img
+{
+  top:50px;
+  left:60px;
+  width:90px;
+  height:90px;
+  z-index:1;
+  display:inline-block;
+  position:absolute;
+ 
+}
+
+.img-bg
+{
+  
+  position:relative;
+  width:200px;
+  height:190px;
+  background-color:black;
+  transition:background-color .2s ease-out;
+  overflow:hidden;
+}
+.img-circle:hover
+{
+  width:215px;
+  height:210px;
+}
+.birthday,.meeting,.wedding
+{
+  position:absolute;
+  top:230px;
+  left:-50px;
+  max-width:350px;
+}
+
+.font-setting
+{
+   font-family:'Amatic SC';
+  font-size:3em;
+  letter-spacing:3px;
+  font-weight:600;
+}
+.tasty-desc
+{
+  color:white;
+  font-size:1.30em;
+  font-family:'Open Sans';
+  margin:auto;
+  font-weight:300;
+  background-color:rgba(0,0,0,0.2.5);
+  
+}
+.description
+{
+  font-size:1em;
+  margin-top:20px;
+  font-family:'Open Sans';
+}
+
+#dessert
+{
+  position:relative;
+  top:180px;
+  background-image:url('https://demo.kallyas.net/phaeton-restaurant-bar-pub/wp-content/uploads/sites/7/2016/06/tasty-deserts.jpg');
+  background-size:cover;
+  background-position:center center;
+  width:1360px;
+  height:800px;
+}
+.description-delivery
+{
+  position:relative;
+  top:135px;
+  left:150px;
+}
+#delivery-title
+{
+ 
+  font-family:'Amatic SC';
+  font-size:3em;
+  font-weight:600;
+}
+.delivery-desc
+{
+ 
+  font-family:'Open Sans';
+  font-size:1.20em;
+  max-width:450px;
+  margin-top:20px;
+}
+#order
+{
+  margin-top:30px;
+  padding:20px 30px 20px 30px;
+  background-color:white;
+  border:2px solid black;
+  font-family:'Montserrat';
+  font-size:0.85em;
+  width:120px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+#order-now
+{
+  width:100%;
+  height:520px;
+  position:relative;
+  background-color:white;
+}
+.details
+{
+  width:430px;
+  margin-top:80px;
+  left:100px;
+}
+.heading
+{
+  font-family:'Amatic SC';
+  font-size:2.70em;
+  font-weight:bold;
+  position:relative;
+}
+.sub-detail
+{
+  position:absolute;
+  top:80px;
+  max-width:358px;
+  font-size:1.20em;
+  font-family:'Open Sans';
+}
+.find
+{
+  margin-top:130px;
+  border:2px solid black;
+  padding:20px 30px 20px 30px;
+  background-color:white;
+  text-transform:uppercase;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:0.95em;
+}
+.call
+{
+  position:relative;
+  top:165px;
+  font-size:1.30em;
+}
+.discount
+{
+  background-color:black;
+  width:100%;
+  height:600px;
+  position:relative;
+}
+.dis-coupon
+{
+  position:absolute;
+}
+.dis-title
+{
+  color:white;
+  text-align:center;
+  width:100%;
+  font-size:3em;
+  letter-spacing:3px;
+}
+.mail
+{
+  position:relative;
+  text-align:center;
+  width:100%;
+  font-size:1.30em;
+  font-family:'Open Sans';
+  font-weight:300;
+}
+.mail-address
+{
+  margin-top:30px;
+  width:300px;
+  color:white;
+  font-size:1em;
+  font-family:'Open Sans';
+  background-color:transparent;
+  border:2px solid white;
+  padding:20px;
+}
+#subscribe
+{
+  font-family:sans-serif;
+  background-color:#ffcc00;
+  color:white;
+  padding:23px;
+  width:150px;
+  border-radius:5px;
+  border:transparent;
+  margin-left:10px;
+  font-weight:bold
+}
+.social-media
+{
+  margin-top:50px;
+  list-style:none;
+}
+.social-media li 
+{
+  display:inline;
+  margin:10px;
+}
+.social-media li i
+{
+  color:gray;
+  font-size:1.50em;
+}
+.social-media li i a:focus
+{
+  outline: none;
+}
+.hori-menu
+{
+  margin-top:35px;
+   list-style:none;  
+}
+.hori-menu li
+{
+  display:inline;
+  margin:10px;
+}
+.hori-menu li a
+{
+  color:gray;
+  font-family:'Montserrat';
+  text-transform:uppercase;
+  font-size:0.75em;
+  font-weight:bold;
+  text-decoration:none;
+}
+.hori-menu li a:hover
+{
+  color:lightgray;
+}
+
+@media (max-width:468px)
+{
+  #about-us .intro-about 
+  {
+    position:relative;
+    left:10px;
+    top:10px;
+  }
+  #read-more
+  {
+    margin-bottom:50px;
+  }
+  #about-us #img-contain
+  {
+    width:100%;
+    height:300px;
+  }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <html>
+<head>
+  <link href="https://www.fontify.me/wf/67f4cf60703fa3825e31a98e5dd3a966" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container bg">
+  <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+       <div class="container-fluid">
+         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id="toggle-btn">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"> </span>
+             <span class="icon-bar"> </span>
+             <span class="icon-bar"> </span>
+         </button>
+         
+    </div>
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav" id="menu">
+           <li> <a href="#about-us" id="about" > about us </a> </li>
+           <li> <a href="#food-items"> our menu </a> </li> 
+          
+           <li> <a href="#arrangments"> special offers </a> </li> 
+           <li> <a> <img src="https://demo.kallyas.net/phaeton-restaurant-bar-pub/wp-content/uploads/sites/7/2016/11/logo.png" id="img-logo"> </a> </li> 
+           
+           <li> <a href="#order-now"> reservation </a> </li> 
+           <li> <a href="#Contact"> location </a> </li> 
+           <li> <a href="#discount"> subscribe </a> </li> 
+         </ul>       
+      </div>
+    </div>    
+ </nav>    
+  <div class="container-fluid">
+    <div class="row">
+      <div  class="col-md-12 col-xs-12">
+        <p class="title">  organic natural food </p>
+        <p class="brief"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+        <p> <button type="button" id="see"> <a href="#food-items" style="color:white;text-decoration:none;"> SEE OUR MENU </a> </button> </p>
+      </div>
+   </div>
+ 
+</div>
+  
+</div> <!-- bg-container closed here -->
+<!-- about us -->
+<section id="about-us"> 
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-xs-12 intro-about">
+        <div>
+          <p class="about">  ABOUT </p>
+          <p class="desc"> Our Chefs offer you perfect cooking, best served dishes with fresh ingredients and old recipes. We have only carefully sourced and seasonal ingredients in our disposal to make rustic dishes. We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. </p>
+          <p>  <button type="button" id="read-more"> READ MORE </button> </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12" id="img-contain">
+        
+      </div>  
+     </div>
+  </div>  
+</section>
+
+
+<section  class="todays-speciality">
+  <div class="container-fluid">
+    <div class="row" id="today">
+      <div class="col-md-12 col-xs-12">
+        <p class="today-title">  Today's Speciality </p>
+        <p class="today-brief"> Chicken with vegetables: mashed potatoes, bean pods, croutons, cranberry jam,rosemary </p>
+        <p> <button type="button" id="menu-btn"> 7 day's menu </button> </p>
+        <div>
+        </div>
+      </div>   
+</section>
+    
+    
+<section  class="food-items" id="food-items">
+  <div class="container-fluid">  
+     <h1 id="menu-title"> menu </h1>
+      <div class="row">  
+       <div class="col-md-3 col-xs-12">
+         <span class="category"> meat </span>
+         <div class="lists">
+         <ul class="list">
+              
+       
+         </ul>
+    
+        </div>
+    
+       </div>
+       <div class="col-md-3 col-xs-12">
+         <span class="category"> sides</span>
+          <div class="lists"> 
+         <ul class="list">
+         
+         </ul> 
+         </div>
+  
+        </div> 
+       <div class="col-md-3 col-xs-12">
+         <span class="category"> pasta </span>
+         <div class="lists">
+         <ul class="list">
+             
+         </ul>
+    
+         </div>
+  
+       </div>
+    </div> 
+  </div>   
+ </section>
+
+    <section id="delivery">
+      
+      <div class="container-fluid" >
+        <div class="row">
+           <div class="col-md-6 col-xs-12 pic">
+           </div> 
+          <div class="col-md-6 col-xs-12 description-delivery">
+            
+            <span id="delivery-title">  Delivery </span>
+
+<p class="delivery-desc">  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+            <p> <button type="button" id="order" > <a href="#order-now" style="text-decoration:none;color:black;">  order now  </a> </button> </p>
+           </div> 
+           </div> 
+        </div>  
+    
+    </section>
+ 
+     <section id="service" class="service-bg">
+    
+      <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-12 col-xs-12">
+                 <p class="service-title">  best service ever </p>
+        <p class="service-brief"> Our 3 Michelin Stars ensure that your experience regarding our cuisine will be one that you will not forget. </p>
+        <p> <img src="https://demo.kallyas.net/phaeton-restaurant-bar-pub/wp-content/uploads/sites/7/2016/06/3-flowers.png" class="img-service"/> </p>
+           </div> 
+          
+           </div> 
+        </div>  
+      <div class="zn-bgSource-overlay" style="background-color:rgba(53,53,53,0.3);width:100%;height:650px;"></div>
+    </section>
+    
+   <section id="arrangments">
+      <div class="container-fluid event">
+        <div class="row">
+           <div class="col-md-3 col-xs-12 event-mgmt">
+             <div class="img-bg img-circle">
+             <img src="https://s4.postimg.org/41nxsk4st/wedding-cake_2.png">
+               </div>
+             
+             <div class="birthday">
+               <span class="font-setting">  birthdays </span>
+               <p class="description">Book a table for two with the best Italian dishes served for the anniversary. Or reserve a bigger one for a huge family to get together one sunny day. Gather your friends together </p>
+             </div>
+              
+           </div> 
+           <div class="col-md-3 col-xs-12  event-mgmt">
+             <div class="img-bg img-circle">
+                <img src="https://www.bing.com/images/search?view=detailV2&insightstoken=bcid_r.MDyUJJ.0gIa8jhPkf-qKOXYJXf.....zQ*ccid_8wPJQkn%2F&form=ANCMS1&iss=SBIUPLOADGET&selectedindex=0&id=394194424&ccid=8wPJQkn%2F&exph=325&expw=325&vt=2&sim=11">
+             </div>
+          <div class="meeting">
+            <span class="font-setting"> meetings </span>
+            <p class="description">   You can also impress your boss by choosing the best place for corporate party with your co-workers. Reserve a spacious room, set the menu, choose the drinks and invite guests.</p>
+          </div>
+             
+           </div> 
+           <div class="col-md-3 col-xs-12  event-mgmt">
+             <div class="img-bg img-circle">
+                <img src="https://s2.postimg.org/49b7a0lsp/christmas-ribbon.png"> 
+             </div>
+              <div class="wedding">
+                <span class="font-setting"> weddings </span>
+                <p class="description">  75 seats for 75 guests are all at your disposal. Organize a party for a huge company and have fun in the restauran. Show your friends the real world of European cuisine and especially Italian vibes.</p>
+             </div>
+           </div> 
+           </div> 
+        </div>  
+    
+    </section>
+    
+    <section id="tasty-desserts">
+      <div class="container-fluid">
+        <div class="row" id="dessert">
+           <div class="col-md-12 col-xs-12">
+             <p class="tasty-title"> Tasty Desserts </p>
+             <p class="tasty-desc">   Whether you crave sweet, savory, decadent or healthy,<br>
+we have hundreds of top-rated dessert recipes to satisfy your taste buds.  </p>
+          </div> 
+        </div>
+      </div>
+    </section>  
+    
+    <section id="order-now">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-xs-12 details">
+            <p class="heading"> Events </p>
+            <p class="sub-detail"> We put at your disposal our place and staff to celebrate your Birthday, the 10th year anniversary with your colleagues even your Weddings. </p>
+            <p> <button type="button" class="find"> Find Out More </button> </p>
+          </div>  
+          <div class="col-md-3 col-xs-12 details">
+            <p  class="heading"> Opening Hours </p>
+            <p style="font-weight:bold;font-family:'Montserrat';font-size:1.30em;margin-top:30px;">  Monday - Saturday  </p>
+            <p style="font-weight:300;font-family:'Montserrat';"> 12pm - 10:30pm </p>
+
+            <p style="font-weight:bold;font-family:'Montserrat';font-size:1.30em;"> Sunday </p>
+            <p style="font-weight:300;font-family:'Montserrat';">  12pm - 9pm </>
+            <p style="font-weight:300;font-family:'Montserrat';margin-top:30px;"> Fruits de mer & cold food available 3-5:00pm </p>
+          </div> 
+          <div class="col-md-3 col-xs-12 details">
+            <p class="heading"> find a table </p>
+          <p class="sub-detail">  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. </p>
+            <p class="call"> <i class="fa fa-phone"> </i> CALL: 0800 1800 1800 </p>
+          </div> 
+        </div>
+      </div>  
+    </section>
+  <section  class="discount" id="discount">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-xs-12 dis-coupon">
+        <p class="dis-title">  discount coupon </p>
+        <p class="mail"> Enter your email address for a 20% off voucher next time you come visit us</p> 
+        <p> <input type="text" placeholder="Your email address" class="mail-address" required>  </input>  <button type="button" id="subscribe"/> SUBSCRIBE </button> </p> 
+    
+ </p>
+            <ul class="social-media">
+              <li> <a> <i class="fa fa-facebook">  </i> </a> </li>
+              <li>  <a> <i class="fa fa-twitter"> </i> </a> </li>
+              <li>  <a> <i class="fa fa-linkedin"> </i> </a> </li>
+           </ul>
+            <ul class="hori-menu">
+              <li> <a href="#about-us">  About Us </a> </li>
+              <li>  <a href="#food-items">  our menu </a> </li>
+              <li>  <a href="#arrangments">  special offers </a> </li>
+              <li>  <a href="#order-now">  reservation </a> </li>
+              <li>  <a href="">  location </a> </li>
+              <li>  <a href="#discount">  subscribe </a> </li>
+           </ul>  
+        <div>
+        </div>
+      </div>   
+</section>
+    
+</body>
+</html>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+      <script id="rendered-js" >
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 60) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+
+
+
+var food_items = new Array(" Chicken Breast ", "  Fresh Grilled Asparagus", "Pork-Stuffed Skins", " Grilled Chicken", " Steak Frites");
+
+var menus = document.querySelectorAll('.list');
+for (var i = 0; i < menus.length; i++)
+{if (window.CP.shouldStopExecution(0)) break;
+  menus[i].innerHTML = "<li>" + food_items[0] + "<span>" + "................." + "</span>" + "<b>" + "$19.50" + "</b>" + "</li>" +
+  "<li>" + food_items[1] + "<span>" + "......" + "</span>" + "<b>" + "$25.00" + "</b>" + "</li>" +
+  "<li>" + food_items[2] + "<span>" + "............." + "</span>" + "<b>" + "$25.50" + "</b>" + "</li>" +
+  "<li>" + food_items[3] + "<span>" + "................." + "</span>" + "<b>" + "$25.49" + "</b>" + "</li>" +
+  "<li>" + food_items[4] + "<span>" + "....................." + "</span>" + "<b>" + "$25.00" + "</b>" + "</li>";
+}window.CP.exitedLoop(0);
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>

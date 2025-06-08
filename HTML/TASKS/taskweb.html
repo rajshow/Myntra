@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Website</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./INDEX.CSS">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About</a></li>
+            <li class="ctn"><a href="#">Contact</a></li>
+        </ul>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <img src="./menu-btn.png" alt="Menu" class="menu-btn">
+            <h1 class="close-btn" style="display: none;">X</h1>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Events Section -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img1.png" alt="Everest Camp">
+                <h4>Everest Camp Trek</h4>
+                <p>Join us for an adventurous trek to Everest Base Camp! Experience breathtaking views and thrilling hikes.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img2.png" alt="Walking Holidays">
+                <h4>Walking Holidays</h4>
+                <p>Discover scenic trails and connect with nature on our guided walking holidays through beautiful landscapes.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>From towering mountains to serene beaches, explore the world’s most stunning destinations with us!</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Upcoming Tours & Destinations</h1>
+                <div class="line"></div>
+                <p>Plan your next adventure with our curated tours to iconic destinations, perfect for nature lovers and thrill seekers alike.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img3.png" alt="Tour 1">
+                    <img src="./img4.png" alt="Tour 2">
+                    <img src="./img5.png" alt="Tour 3">
+                    <img src="./img6.png" alt="Tour 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright © 2025 Outdoor Adventure</p>
+    </section>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav');
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+        const closeBtn = document.querySelector('.close-btn');
+
+        mobileNav.addEventListener('click', (e) => {
+            navlinks.classList.toggle('mobile-menu');
+            if (e.target === menuBtn) {
+                menuBtn.style.display = 'none';
+                closeBtn.style.display = 'block';
+            }
+            if (e.target === closeBtn) {
+                closeBtn.style.display = 'none';
+                menuBtn.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

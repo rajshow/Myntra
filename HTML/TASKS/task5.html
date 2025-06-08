@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .section {
+            border: 2px solid black;
+            padding: 10px;
+            width: 30%;
+        }
+        .section h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .color-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        .color {
+            width: 70%;
+            height: 25px;
+            margin-right: 5px;
+        }
+        .label {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- RGB Section -->
+        <div class="section">
+            <h3>RGB</h3>
+            <div class="color-box">
+                <div class="color" style="background-color: rgb(255, 0, 0);"></div>
+                <div class="label">rgb(255,0,0)</div>
+            </div>
+            <div class="color-box">
+                <div class="color" style="background-color: rgb(0, 0, 255);"></div>
+                <div class="label">rgb(0,0,255)</div>
+            </div>
+            <div class="color-box">
+                <div class="color" style="background-color: rgb(0, 255, 0);"></div>
+                <div class="label">rgb(0,255,0)</div>
+            </div>
+            <!-- Add more RGB colors here -->
+        </div>
+
+        <!-- RGBA Section -->
+        <div class="section">
+            <h3>RGBA</h3>
+            <div class="color-box">
+                <div class="color" style="background-color: rgba(255, 0, 0, 1);"></div>
+                <div class="label">rgba(255,0,0,1)</div>
+            </div>
+            <div class="color-box">
+                <div class="color" style="background-color: rgba(0, 0, 255, 0.6);"></div>
+                <div class="label">rgba(0,0,255,0.6)</div>
+            </div>
+            <div class="color-box">
+                <div class="color" style="background-color: rgba(0, 255, 0, 0.2);"></div>
+                <div class="label">rgba(0,255,0,0.2)</div>
+            </div>
+            <!-- Add more RGBA colors here -->
+        </div>
+
+        <!-- Shades of Grey Section -->
+        <div class="section">
+            <h3>Shades of Grey</h3>
+            <div class="color-box">
+                <div class="color" style="background-color: rgb(0, 0, 0);"></div>
+                <div class="label">rgb(0,0,0)</div>
+            </div>
+            <div class="color-box">
+                <div class="color" style="background-color: rgb(24, 24, 24);"></div>
+                <div class="label">rgb(24,24,24)</div>
+            </div>
+            <div class="color-box">
+                <div class="color" style="background-color: rgb(64, 64, 64);"></div>
+                <div class="label">rgb(64,64,64)</div>
+            </div>
+            <!-- Add more shades of grey here -->
+        </div>
+    </div>
+</body>
+</html>

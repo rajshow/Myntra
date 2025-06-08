@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            /* background:linear-gradient(bisque,gray,bisque); */
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+        }
+
+        .container {
+            display: flex;
+            /* justify-content: space-around; */
+            text-align: center;
+            /* margin: 20px; */
+            /* padding: 5px; */
+             margin-bottom: 40px; 
+          
+           
+        }
+        .section {
+            width: 100%;
+            height: 370px;
+            border: 2px solid red;
+            padding: 20px;
+            margin: 20px;
+            background:linear-gradient(purple,pink,violet);
+        
+        }
+
+         .box{
+            display: flex;
+            background:linear-gradient(skyblue,gray,pink);
+            width: 100%;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .boxone{
+            height: 450px;
+            width: 600px;
+            margin: 10px;
+        }
+
+        .maps{
+            display: flex;
+            background:linear-gradient(gold,yellow,red);
+            width: 100%;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .mapsone{
+            height: 450px;
+            width: 600px;
+            margin: 10px;
+        }
+        .font{
+            display: flex;
+            background:linear-gradient(pink,red,blue);
+            width: 100%;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:20px;
+        }
+        .fontone{
+            height: 450px;
+            width: 600px;
+            margin: 10px;
+        }
+    
+        .container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            padding: 20px;
+            width: 50%;
+            height: 450px;
+          
+        }
+        .section {
+            border: 2px solid black;
+            padding: 20px;
+            background-color: lightpink;
+        
+            
+        }
+        .color-box {
+            width: 300px;
+            height: 30px;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .background{
+            display: flex; 
+            /* justify-content: space-around; */
+            /* text-align: center; */
+            /* margin: 20px; */
+            /* padding: 5px; */
+             margin-bottom: 30px; 
+        }
+        .image{
+            display: flex;    
+            width: 100%;
+            height: 370px;
+            padding: 20px;
+            margin: 20px;
+        }  
+        .picture1{
+            display: flex; 
+            /* justify-content: space-around; */
+            /* text-align: center; */
+            /* margin: 20px; */
+            /* padding: 5px; */
+             margin-bottom: 30px; 
+            
+        }
+        .picture{
+                
+            width: 100%;
+            height: 370px;
+            padding: 20px;
+            margin: 20px;
+        }  
+         
+
+        .mapping{
+            display: flex; 
+            /* justify-content: space-around; */
+            /* text-align: center; */
+            /* margin: 20px; */
+            /* padding: 5px; */
+             margin-bottom: 30px; 
+        }
+        .images{
+                
+            width: 95%;
+            height: 550px;
+            padding: 20px;
+            margin: 20px;
+            
+        }  
+        
+        
+        .imagelist{
+            display: flex;
+            text-align: center;
+            color: black;
+            margin-bottom: 40px;
+           
+        }
+        .list{
+            background: linear-gradient(aqua,gold,violet); 
+            border: solid;
+        }
+        .listt{
+            margin: 50px;
+            border: solid;
+            font-size: 20px;
+            text-align: left;
+            width:500px;
+            height:auto;
+        }
+        .marque{
+            display: flex; 
+            /* justify-content: space-around; */
+            /* text-align: center; */
+            /* margin: 20px; */
+            /* padding: 5px; */
+             margin-bottom: 30px; 
+        }
+        .nested{
+                
+            width: 95%;
+            height: 800px;
+            padding: 20px;
+            margin: 20px;
+            
+        }  
+        .emoji {
+           
+           margin: 70px;
+           border:solid darkmagenta;
+           border-radius:20px;
+           font-size: 30px;
+       }
+      
+/* nav bar css  */
+
+.navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .navbar h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+        }
+
+        .nav-links a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+    </style>
+    
+        
+        
+      
+    
+            
+     
+        
+         
+        
+
+
+
+    </style>
+
+</head>
+<body>
+    <div style="font-size: 70PX; background-color: #00ff00; ;"><center>HTML</center></div>
+
+    <nav>
+        <div class="navbar">
+            <h1>My Website</h1>
+            <ul class="nav-links">
+                <li><a href="#a">HEADINGS</a></li>
+                <li><a href="#b">YOUTUBE</a></li>
+                <li><a href="#c">GOOGLE MAPS</a></li>
+                <li><a href="#d">FORMATING AND QUATATIONS</a></li>
+                <li><a href="#e">RGB AND HEX</a></li>
+                <li><a href="#f">BACKGROUND IMAGE</a></li>
+                <li><a href="#g">PICTURE ELEMENTAND OPACITY</a></li>
+                <li><a href="#h">IMAGE MAPPING<a</li>
+                <li><a href="#i">TYPES OF LISTS</a></li>
+                <li><a href="#j">NESTED LIST AND MARQUE</a></li>
+                <li><a href="#k"> VIST LINKS</a></li>
+                <li><a href="#l">EMOJI COLLECTION</a></li>
+                <li><a href="#m">STUDENT REGISTRATION FORM</a></li>
+            </ul>
+        </div>
+    </nav>    
+
+    <center>
+    <div style="background: linear-gradient(purple,pink,violet); border: solid greenyellow;">
+    <center><hr><h1 id="a">Headings</h1><hr></center> 
+    <div class="container">
+        <!-- RGB Section -->
+        <!-- <div class="section" style="margin-right:30px ;" style="background-image:url("https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="); background-repeat: round; "> -->
+        <div class="section">
+            <h1>Heading 1</h1>
+            <h1>Heading 1</h1>
+            <h1>Heading 1</h1>
+            <h1>Heading 1</h1>
+            <h1>Heading 1</h1>
+            <h1>Heading 1</h1>
+        </div>
+
+        <!-- hex Section -->
+        <div class="section" ;">
+             <h2>Heading 2</h2>
+             <h2>Heading 2</h2>
+             <h2>Heading 2</h2>
+             <h2>Heading 2</h2>
+             <h2>Heading 2</h2>
+             <h2>Heading 2</h2>
+        </div>
+
+        <!-- Shades of Grey Section -->
+
+        <div class="section">
+            <h3>Heading 3</h3>
+            <h3>Heading 3</h3>
+            <h3>Heading 3</h3>
+            <h3>Heading 3</h3>
+            <h3>Heading 3</h3>
+            <h3>Heading 3</h3>
+        </div>
+
+        <div class="section" >
+            <h4>Heading 4</h4>
+            <h4>Heading 4</h4>
+            <h4>Heading 4</h4>
+            <h4>Heading 4</h4>
+            <h4>Heading 4</h4>
+            <h4>Heading 4</h4>
+       </div>
+
+       <div class="section" >
+        <h5>Heading 5</h5>
+        <h5>Heading 5</h5>
+        <h5>Heading 5</h5>
+        <h5>Heading 5</h5>
+        <h5>Heading 5</h5>
+        <h5>Heading 5</h5>
+   </div>
+
+   <div class="section" >
+    <h6>Heading 6</h6>
+    <h6>Heading 6</h6>
+    <h6>Heading 6</h6>
+    <h6>Heading 6</h6>
+    <h6>Heading 6</h6>
+    <h6>Heading 6</h6>
+</div>
+</div>
+</div>
+</center>
+<br><br>
+<div style="background: linear-gradient(purple,violet); border: solid sandybrown;">
+<center><hr><h1 id="b">YouTube</h1><hr></center>
+<div id="box1" class="box">
+    <div class="boxone">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IT51Lfk83aA?si=lMV7QY08_YOws1qJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div style="background: linear-gradient(purple,pink,violet);" id="box2" class="boxone">
+        <p style="font-size: medium; font-style: italic;">
+            Oh My Friend is a 2011 Telugu-language romantic drama film written and directed by newcomer Venu Sri Ram.[2] It stars Siddharth, Hansika and Shruti Haasan with Navdeep in an extended cameo appearance. It was produced by Dil Raju. <br>
+            <br><br><br>
+            Chandu and Siri are childhood friends, affectionately calling each other "Faltoos" and "Killer", respectively. Their friendship remains intact as they grow up. Chandu was sent to Mumbai to do an MBA, but learned music instead and returned to the agony of his father. Siri convinces Chandu's father that it is her responsibility to take care of Chandu's career. They go for an audition where they get into a fight with a band and he is sent out. Before that, Siri accepts a love proposal from Uday, who lives in the US, after consulting Chandu. Later, Chandu and Siri accidentally meet their mutual friend in college, Ritu Sharma, and Chandu falls in love with her at first sight. Chandu starts spending time with Ritu to impress her, but Siri feels that she is being avoided. Siri decides to leave for a dancing school in Chennai. Meanwhile, Ritu accepts Chandu's love proposal. When Siri is about to leave, Chandu apologises to her that he has not noticed that she is being avoided. At the same time, Uday comes back from the US to surprise her. Hence, she decides not to leave.
+        </p>
+      
+    </div>
+    
+</div>
+</div>
+</div>
+<br><br>
+<div style="background: linear-gradient(purple,violet); border: solid ;">
+    <center><hr><h1 id="c">google maps</h1><hr></center>
+<div id="map1" class="maps">
+    <div class="mapsone">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10015.115725203868!2d78.4441406141321!3d17.437774522179993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1739637142776!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div style="background: linear-gradient(purple,pink,violet);" id="map2" class="mapsone">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+    </div>
+</div>
+</div>  
+<br><br><br>  
+<div style="background: linear-gradient(purple,pink,violet); border: solid ;">
+    <hr><h1 id="d"><center>Formating and quatations</center> </h1><hr>
+    <div id="font1" class="font">
+        <div class="fontone" style="font-size: 40px ;">
+            <b> this is bold tag</b>
+    <br> <br>
+    <strong> this is strong tag</strong>
+    <br>
+    <small> this is small tag</small>
+    <br>
+    <i> this is italic tag</i>
+    <br>
+    <em> this is emphasized</em>
+    <br>
+    <mark> this is mark tag</mark>
+    <br>
+    <u> this is underline tag</u>
+    <br>
+    <ins>this is inserted tag</ins>
+    <br>
+    log <sub> e </sub> 10=1
+    <br>
+</div>
+    
+<div id="font2" class="fontone">
+     <p style="font-size:20px; font-style: italic;">
+    2 <sup> 3 </sup> 10=1
+    <br>
+    <del> this is delete or strike out tag</del>
+    <br>
+    <q> this is quatation tag</q>
+    <br>
+    <bdo dir="rtl" style="font-size:  px;">ambulance</bdo>
+    <br>
+    <bdo dir="itr" style="font-size: px;">ambulance</bdo>
+    <br>
+    <h1>abrivation tag:</h1>
+    <br>
+    HOVER
+    <h3> <abbr title="united nation organisation">uno</abbr></h3>
+    <p><abbr title="this is a paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea molestiae beatae atque exercitationem, doloremque molestias ad nam eos. At facere autem consequuntur nemo aliquid iure commodi quaerat quod qui.</abbr></p>
+    <br> 
+    <h1>address tag:</h1>
+    H.no.6-78/3, <br>
+    Sr Nagar, <br>
+    Vigneswara pg, <br>
+    hyderabad, <br> 
+     </div>
+</div>
+</div>
+<br><br><br><br><br>
+<div style="border: solid; background: linear-gradient(purple,pink,violet);">
+<!-- <center> -->
+       <center> <hr><h1 id="e">RGB AND HEX</h1><hr> </center>
+<div class="container" >
+    <!-- RGB Section -->
+    <div class="section" style="margin-right:5px ;" style="background-image:url("https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="); background-repeat: round; ">
+        <h2>RGB</h2>
+        <div class="color-box" style="background-color: rgb(255,0,0);">rgb(255,0,0)</div>
+        <div class="color-box" style="background-color: rgb(0,0,255);">rgb(0,0,255)</div>
+        <div class="color-box" style="background-color: rgb(0,255,0);">rgb(0,255,0)</div>
+        <div class="color-box" style="background-color: rgb(255,255,0);">rgb(255,255,0)</div>
+        <div class="color-box" style="background-color: rgb(255,0,255);">rgb(255,0,255)</div>
+        <div class="color-box" style="background-color: rgb(0,255,255);">rgb(0,255,255)</div>
+        <div class="color-box" style="background-color: rgb(255,0,150);">rgb(255,0,150)</div>
+        <div class="color-box" style="background-color: rgb(255,150,0);">rgb(255,150,0)</div>
+        <div class="color-box" style="background-color: rgb(150,255,0);">rgb(150,255,0)</div>
+        <div class="color-box" style="background-color: rgb(150,0,255);">rgb(150,0,255)</div>
+    </div>
+
+    <!-- hex Section -->
+    <div class="section" 
+    style="margin-right:30px;
+    ">
+        <h2>HEX</h2>
+        <div class="color-box" style="background-color: #ff0000;">hex(#ff0000)</div>
+        <div class="color-box" style="background-color: #0000ff;">hex(#0000ff)</div>
+        <div class="color-box" style="background-color: #00ff00;">hex(#00ff00)</div>
+        <div class="color-box" style="background-color: #ffff00;">hex(#ffff00)</div>
+        <div class="color-box" style="background-color: #ff00ff;">hex(#ff00ff)</div>
+        <div class="color-box" style="background-color: #00ffff;">hex(#00ffff)</div>
+        <div class="color-box" style="background-color: #ff0096;">hex(#ff0096)</div>
+        <div class="color-box" style="background-color: #ff9600;">hex(#ff9600)</div>
+        <div class="color-box" style="background-color: #96ff00;">hex(#96ff00)</div>
+        <div class="color-box" style="background-color: #9600ff;">hex(#9600ff)</div>
+    </div>
+
+    <!-- Shades of Grey Section -->
+    
+    <div class="section">
+        <h2>Shades of Grey</h2>
+        <div class="color-box" style="background-color: rgb(0,0,0);">rgb(0,0,0)</div>
+        <div class="color-box" style="background-color: rgb(24,24,24);">rgb(24,24,24)</div>
+        <div class="color-box" style="background-color: rgb(64,64,64);">rgb(64,64,64)</div>
+        <div class="color-box" style="background-color: rgb(80,80,80);">rgb(80,80,80)</div>
+        <div class="color-box" style="background-color: rgb(104,104,104);">rgb(104,104,104)</div>
+        <div class="color-box" style="background-color: rgb(112,112,112);">rgb(112,112,112)</div>
+        <div class="color-box" style="background-color: rgb(169,169,169);">rgb(169,169,169)</div>
+        <div class="color-box" style="background-color: rgb(190,190,190);">rgb(190,190,190)</div>
+        <div class="color-box" style="background-color: rgb(210,210,210);">rgb(210,210,210)</div>
+        <div class="color-box" style="background-color: rgb(255,255,255);">rgb(255,255,255)</div>
+    </div>
+</div>
+<!-- </center> -->
+</div>
+<br><br><br>
+
+
+
+<div style="background: linear-gradient(purple,violet,pink); border: solid;">
+    <hr><center><h1 id="f">background-image</h1></center><hr>
+<div class="background">
+    <div class="image">
+     <div>
+        <h1>no-repeat</h1>
+        <P style="background-image: url('https://i.pinimg.com/originals/f3/8d/bc/f38dbcbab1e30643e05f5b9caa8aaa39.jpg'); background-repeat: no-repeat;
+         width: 70%;
+        height: auto; "> 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod facer e qui nobis dolorem voluptas, repudiandae doloremque magni rem laborum cupiditate! Magni reiciendis error officiis optio facere neque quae iste architecto Lorem ipsum dolor sit amet consectetur adipisicing elit. A vel autem aliquam corporis harum, porro distinctio facilis officia repellendus quibusdam explicabo accusantium soluta, nisi deserunt. Voluptatem minima aperiam debitis magni.
+            Dolor, iusto quibusdam perspiciatis accusamus temporibus quam consequatur libero dolorem magni pariatur nobis odio magnam ipsa quidem totam repellat nisi, tenetur reiciendis quos quod voluptatibus? Voluptatum exercitationem ea iste. Iusto.
+            Molestiae eos soluta libero, magnam ut ab iure consequuntur architecto laboriosam tempora at modi sed nemo aliquam hic quo repellat quas quam a atque. Odio nisi est eveniet ullam soluta.
+            Delectus necessitatibus consectetur nam libero ab adipisci sapiente provident at. Natus blanditiis 
+         </P>
+     </div>
+
+     <div>
+        <h1>Repeat-y</h1>
+        <P style="background-image: url('https://i.pinimg.com/originals/f3/8d/bc/f38dbcbab1e30643e05f5b9caa8aaa39.jpg'); background-repeat:repeat-y;
+         width: 70%;
+        height: auto; "> 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod facer e qui nobis dolorem voluptas, repudiandae doloremque magni rem laborum cupiditate! Magni reiciendis error officiis optio facere neque quae iste architecto Lorem ipsum dolor sit amet consectetur adipisicing elit. A vel autem aliquam corporis harum, porro distinctio facilis officia repellendus quibusdam explicabo accusantium soluta, nisi deserunt. Voluptatem minima aperiam debitis magni.
+            Dolor, iusto quibusdam perspiciatis accusamus temporibus quam consequatur libero dolorem magni pariatur nobis odio magnam ipsa quidem totam repellat nisi, tenetur reiciendis quos quod voluptatibus? Voluptatum exercitationem ea iste. Iusto.
+            Molestiae eos soluta libero, magnam ut ab iure consequuntur architecto laboriosam tempora at modi sed nemo aliquam hic quo repellat quas quam a atque. Odio nisi est eveniet ullam soluta.
+            Delectus necessitatibus consectetur nam libero ab adipisci sapiente provident at. Natus blanditiis 
+         </P>
+     </div>
+     <div>
+        <h1>Repeat-x</h1>
+        <P style="background-image: url('https://i.pinimg.com/originals/f3/8d/bc/f38dbcbab1e30643e05f5b9caa8aaa39.jpg'); background-repeat: repeat-x;
+         width: 80%;
+        height: auto; "> 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod facer e qui nobis dolorem voluptas, repudiandae doloremque magni rem laborum cupiditate! Magni reiciendis error officiis optio facere neque quae iste architecto Lorem ipsum dolor sit amet consectetur adipisicing elit. A vel autem aliquam corporis harum, porro distinctio facilis officia repellendus quibusdam explicabo accusantium soluta, nisi deserunt. Voluptatem minima aperiam debitis magni. Dolor, iusto quibusdam perspiciatis accusamus temporibus quam consequatur libero dolorem magni pariatur nobis odio magnam ipsa quidem totam repellat nisi, tenetur reiciendis quos quod voluptatibus? Voluptatum exercitationem ea iste. Iusto.
+        </P>
+     </div>
+     <div>
+        <h1>Repeat</h1>
+        <P style="background-image: url('https://i.pinimg.com/originals/f3/8d/bc/f38dbcbab1e30643e05f5b9caa8aaa39.jpg');background-repeat: repeat;
+         width: 70%;
+        height: auto; "> 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod facer e qui nobis dolorem voluptas, repudiandae doloremque magni rem laborum cupiditate! Magni reiciendis error officiis optio facere neque quae iste architecto Lorem ipsum dolor sit amet consectetur adipisicing elit. A vel autem aliquam corporis harum, porro distinctio facilis officia repellendus quibusdam explicabo accusantium soluta, nisi deserunt. Voluptatem minima aperiam debitis magni.
+            Dolor, iusto quibusdam perspiciatis accusamus temporibus quam consequatur libero dolorem magni pariatur nobis odio magnam ipsa quidem totam repellat nisi, tenetur reiciendis quos quod voluptatibus? Voluptatum exercitationem ea iste. Iusto.
+            Molestiae eos soluta libero, magnam ut ab iure consequuntur architecto laboriosam tempora at modi sed nemo aliquam hic quo repellat quas quam a atque. Odio nisi est eveniet ullam soluta.
+            Delectus necessitatibus consectetur nam libero ab adipisci sapiente provident at. Natus blanditiis 
+         </P>
+     </div>
+    </div>
+</div> 
+</div>   
+<br><br><br><br>
+<div style= "background:linear-gradient(purple,pink,violet); border: solid;">
+    <hr><center><h1 id="g">picture element and opacity</h1></center><hr>
+     <div class="picture1">
+     <div class="picture">
+        <h1>picture element</h1>
+        <picture>  
+            <source media="(min-width:900px)" srcset="https://assets.weforum.org/article/image/0ZUBmNNVLRCfn3NdU55nQ00UF64m2ObtcDS0grx02fA.jpg">
+            <source media="(min-width:700px)" srcset="https://images.pexels.com/photos/12365963/pexels-photo-12365963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <img src="https://assets.weforum.org/article/image/0ZUBmNNVLRCfn3NdU55nQ00UF64m2ObtcDS0grx02fA.jpg" alt="" style="width: 600px; height: auto;">
+        </picture>
+    </div>
+    <br><br>
+  
+    <div class="picture" style="margin: auto;">
+        <h1>opacity</h1>
+        <img style="opacity: 0.5;"  src="https://a.espncdn.com/combiner/i?img=/i/cricket/cricinfo/1471603_1296x729.jpg" alt="" width="500px"; height="350;">
+    </div>
+</div>
+</div>
+<br><br><br>
+<div style="background: linear-gradient(purple,pink,violet);border: solid;">
+    <hr><center><h1 id="h">Image mapping</h1></center><hr>
+    <div class="mapping">
+    <div class="images">
+    <h1>image mapping</h1>
+    <img src="https://static.toiimg.com/thumb/msid-87200680,width-600,height-500,resizemode-4/87200680.jpg"  usemap="#image-map">
+<map name="image-map">
+    <area target="_blank" alt="virat " title="virat "href="https://www.britannica.com/biography/Virat-Kohli" coords="250,719,0,-1" shape="rect">
+    <area target="_blank" alt="rohit sharma" title="rohit sharma" href="https://www.abc.net.au/news/2025-01-03/cricket-rohit-sharma-retirement-ravi-shastri-scg-test/104781276" coords="504,718,260,-1" shape="rect">
+    <area target="_blank" alt="bumrah" title="bumrah" href="https://www.tribuneindia.com/news/sports/not-having-bumrah-will-reduce-indias-chances-by-30-35-in-champions-trophy-shastri/" coords="509,2,764,716" shape="rect">
+    <area target="_blank" alt="Rishabh pant" title="Rishabh pant" href="https://www.indiatoday.in/sports/story/cricket-rishabh-pant-foundation-launch-help-needy-commerical-inconme-donation-2675329-2025-02-05" coords="1009,712,765,-1" shape="rect">
+    <area target="_blank" alt="varun" title="varun" href="https://timesofindia.indiatimes.com/sports/cricket/bangladesh-in-india/feels-like-a-rebirth-varun-chakravarthy-on-making-team-india-comeback-after-three-years/articleshow/113991529.cms" coords="1274,719,1024,2" shape="rect">
+</map>
+</div>
+<br><br>
+    <div class="images" style="margin: 20px;">
+        <p style="font-size: small;"> <b> 1.Virat kohli</b>:Hindi pronunciation: born 5 November 1988 is an Indian international cricketer who plays Test and ODI cricket for the national team and is a former captain in all formats. He is a right-handed batsman and an occasional right arm medium pace bowler. Kohli holds the highest IPL run-scorer record, ranks third in T20I, third in ODI, and stands the fourth-highest in international cricket.Regarded as one of the greatest batsmen of all time, he holds the record for the most centuries in ODIs and has the second most centuries in international cricket all time.</p><br>
+        <p style="font-size: small;"> <b> 2.Rohit sharma</b>:Rohit Sharma (born 30 April 1987) is an Indian cricketer and the captain of national cricket team in Test and ODI formats. He is widely regarded as one of the best opening batters of all time.[3] He is also known for hitting sixes. He is a right-handed batsman who plays for Mumbai Indians in Indian Premier League and for Mumbai in domestic cricket. Rohit previously captained India in all three formats. After leading the victory at the 2024 Men's T20 World Cup, he announced his retirement from T20Is</P><br>
+        <p style="font-size: small;"> <b> 3.Jasprit Bumrah</b>:Jasprit Jasbirsingh Bumrah is an Indian cricketer who plays for the national team in all formats of the game. He is the vice-captain of India in the Test format. A right-arm fast bowler, Bumrah plays for Gujarat in domestic cricket and for Mumbai Indians in the Indian Premier League.</p><br>
+        <p style="font-size: small;"> <b> 4.Rishabh Pant</b>:Rishabh Rajendra Pant is an Indian international cricketer who plays for the Indian cricket team as a wicket-keeper batter. He plays for Lucknow Super Giants in the Indian Premier League. Having played all formats for India, he is best known for his consistency to score runs in Test cricket.</p><br>
+        <p style="font-size: small;"> <b> 5.Varun Chakravarthy</b>:Varun Chakravarthy Vinod is an Indian international cricketer who plays for Tamil Nadu in domestic cricket and Kolkata Knight Riders in the Indian Premier League as a leg spin bowler</p>
+        </div>
+</div>
+</div>
+<br><br><br>
+
+     <div style="background-color: purple,pink,violet;" class="list">
+        <center><h1 id="i"><hr>TYPES OF LISTS<hr></h1></center>
+     <div class="imagelist">
+         
+           <div class="listt" style="background-image:url('https://www.gettyimages.co.uk/gi-resources/images/Homepage/171795015.jpg' );background-repeat: round;" > 
+            <ol class="ORDERED-LIST">
+                <h2>ORDERED LIST</h2>
+                <h3>FULL STACK JAVA</h3>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>BOOTSTRAP</li>
+                <li>REACT JS</li>
+                <li>JAVA</li>
+                <li>MYSQL</li>
+                <li>ANGULAR</li>
+            </ol>
+        </div>
+           <div class="listt" style="background-image: url('https://wallpaperaccess.com/full/2604895.jpg');background-repeat: round ;">
+             <ul class="UNORDERED-LIST">
+                <h2>UNORDERED LIST</h2>
+                <br><br>
+                <li>M.S DHONI</li>
+                <li>VIRAT KOHLI</li>
+                <li>ROHIT</li>
+                <li>RISHAB PANT</li>
+                <li>K.L RAHUL</li>
+                <li>HARDIK</li>
+                <li>JADEJA</li>
+                <li>BUMRAH</li>
+                <li>IYER</li>
+                <li>S.K.Y</li>
+                <li>N.K.R</li>
+                
+    
+            </ul>
+        </div>
+           <div class="listt" style="background-image:url('https://img.freepik.com/free-photo/top-view-bowl-with-lentils-variety-condiments_1220-423.jpg'); ">
+            <dl style="color: purple;">
+                <h2 style="color: purple;">DESCRIPTION LIST </h2>
+                <h4><dt>NON-VEG</dt></h4>
+                <dd>CHICKEN 65</dd>
+                <dd>VEG MOMOS</dd>
+                <dd>PANEER TIKKA</dd>
+                <dd>SPRING ROLLS</dd>
+                <dd>CHILLI MUSHROOM</dd>
+                <h4><dt>VEG</dt></h4>
+                <dd>KAJU BIRYANI</dd>
+                <dd>CHILLI PANNER</dd>
+                <dd>GOBI 65</dd>
+                <dd>MUSHROOM BIRYANI</dd>
+                <dd>PANNER BIRYANI</dd>
+                
+            </dl>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<div style="background: linear-gradient(purple,pink,violet); border: solid; font-size: small ;">
+    <hr><center><h1 id="j">nested list and marque</h1></center><hr>
+    <div class="marque">
+    <div class="nested">
+        <h1>Nested list</h1>
+        <ul>
+            <li>FULL STACK
+                <ul>
+                    <li>FRONT END
+                        <ul>
+                            <li>HTML
+                                <ul>
+                                    <li>HEADING AND PARAGRAPH</li>
+                                    <li>FORMATING AND QUATATIONS</li>
+                                    <li>IMAGES
+                                        <ul>
+                                            <LI>
+                                                IMAGES TYPES
+                                                <ul>
+                                                    <li>ABSOLOUTE</li>
+                                                    <li>RELATIVE</li>
+                                                </ul>
+                                                <li>PICTURE ELEMENT</li>
+                                                <li>BACKGROUND-IMAGE</li>
+                                                <li>IMAGE MAPPING</li>
+
+                                            </LI>
+                                        </ul>
+                                    </li>
+                                    <li>FORMS</li>
+                                    <li>COLORS
+                                        <ul>
+                                            <li>RGB</li>
+                                            <li>HEX</li>
+                                            <li>HEL</li>
+                                        </ul>
+                                    </li>
+                                    <li>TABLE</li>
+                                    <li>LIST
+                                        <ul>
+                                            <li>ORDERED LIST
+                                                <ul>
+                                                    <li>A</li>
+                                                    <li>a</li>
+                                                    <li>I</li>
+                                                    <li>i</li>
+                                                    <li>1</li>
+                                                </ul>
+                                            </li>
+                                            <li>UNORDERED LIST
+                                                <ul>
+                                                    <li>CIRCLE</li>
+                                                    <li>SQUARE</li>
+                                                    <li>DISC</li>
+                                                    <li>NONE</li>
+                                                </ul>
+                                            </li>
+                                            <LI>DESCRIPTION LIST</LI>
+                            
+                                        </ul>
+                                    </li>
+                                    <li>COMMENTS</li>
+                                    <li>HYPERLINKS</li>
+                                    <li>LAYOUT</li>
+                                </ul>
+                            </li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>BOOTSTRAP</li>
+                            <li>JQUERY</li>
+                            <li>REACT JS</li>
+                            <li>ANUGULAR JS</li>
+                        </ul>
+
+                    
+                    </li>
+                    <li>BACK END
+                        <ul>
+                            <li>PYTHON</li>
+                            <li>JAVA</li>
+                            <li>NODE JS</li>
+                        </ul>
+                    </li>
+                    <li>DATA BASE</li>
+                </ul>
+                    
+                
+            </li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="nested" style="margin: auto;">
+        <h1>Marque</h1>
+        <marquee behavior="" direction="">
+
+        <p style="color: pink;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum architecto quo, doloribus a odio alias unde maxime optio nihil quisquam sequi aut consequuntur reprehenderit! Fuga nihil ratione sed amet non.
+        Asperiores quia repellat temporibus delectus veniam laborum? Accusantium necessitatibus, assumenda autem deserunt et hic odio sint ipsa maxime neque asperiores aut a voluptatem iusto, soluta eveniet error dicta optio earum!
+        </p>
+        </marquee>
+        <br><br>
+        <marquee behavior="" direction="right">
+
+            <p style="color: pink;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum architecto quo, doloribus a odio alias unde maxime optio nihil quisquam sequi aut consequuntur reprehenderit! Fuga nihil ratione sed amet non.
+            Asperiores quia repellat temporibus delectus veniam laborum? Accusantium necessitatibus, assumenda autem deserunt et hic odio sint ipsa maxime neque asperiores aut a voluptatem iusto, soluta eveniet error dicta optio earum!
+            </p>
+        </marquee>
+        <br><br>
+        <marquee behavior="" direction="up">
+
+            <p style="color: pink;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum architecto quo, doloribus a odio alias unde maxime optio nihil quisquam sequi aut consequuntur reprehenderit! Fuga nihil ratione sed amet non.
+            Asperiores quia repellat temporibus delectus veniam laborum? Accusantium necessitatibus, assumenda autem deserunt et hic odio sint ipsa maxime neque asperiores aut a voluptatem iusto, soluta eveniet error dicta optio earum!
+            </p>
+        </marquee>
+        <br><br>
+        <marquee behavior="" direction="down">
+
+            <p style="color: pink;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum architecto quo, doloribus a odio alias unde maxime optio nihil quisquam sequi aut consequuntur reprehenderit! Fuga nihil ratione sed amet non.
+            Asperiores quia repellat temporibus delectus veniam laborum? Accusantium necessitatibus, assumenda autem deserunt et hic odio sint ipsa maxime neque asperiores aut a voluptatem iusto, soluta eveniet error dicta optio earum!
+            </p>
+            </marquee>
+       </div>
+</div>
+</div>
+<br><br><br><br>
+<div>
+    <h1 id="k"><center>VIST LINKS</center></h1>
+    <div style="border: solid;">
+        <div style="background: linear-gradient(purple,pink,violet);">
+        <li style="font-size: 20px;"><a href="https://www.google.com"   target="_blank">Google</a></li>
+        <li style="font-size: 20px;"><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+        <li style="font-size: 20px;"><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li style="font-size: 20px;"><a href="https://www.youtube.com"  target="_blank">YouTube</a></li>
+    </ul>
+    </div>
+    </div>
+    <br><br><br>
+    <br>
+    <br>
+    <body><div style="background: linear-gradient(purple,rgb(225, 255, 0),white);">
+        <h1 id="l"><center>Emoji Collection</center></h1>
+        <br>
+        
+        <div class="total" style="border: solid; display: flex;">
+        <div class="emoji">😊 <br>😀 <br> 😍<br> 😂 <br>🥳</div>
+        <div class="emoji">🍕<br> 🍔 <br>🍎<br> 🎂 <br>☕</div>
+        <div class="emoji">🚗<br> ✈ <br>🚀<br> 🚲<br> 🚂 </div>
+        <div class="emoji">⚽<br> 🏀<br> 🎸<br> 🎮 <br>🎭 </div> 
+        <div class="emoji">😊<br> 😀<br> 😍<br> 😂<br> 🥳  </div>
+        <div class="emoji">🚗<br> ✈ <br>🚀 <br>🚲<br> 🚂 </div> 
+        <div class="emoji">⚽ <br>🏀<br> 🎸 <br>🎮 <br>🎭 </div> 
+    </div>
+    <br><br>
+    <br>
+    <br>
+    <h2 id="m"  font-size: 30px;"><center>Student Registration Form</center></h2>
+    <div style="border: solid;">
+    
+    
+    <div  style="background: linear-gradient(purple,pink,violet);"">
+        <form action="#" method="post">
+            <table border="1">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="first_name" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="last_name" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number:</td>
+                    <td><input type="tel" name="mobile" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td>
+                        <select name="day">
+                            <option value="">Day</option>
+                            <script>
+                                for (let i = 1; i <= 31; i++) {
+                                    document.write(`<option value="${i}">${i}</option>`);
+                                }
+                            </script>
+                        </select>
+                        <select name="month">
+                            <option value="">Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="year">
+                            <option value="">Year</option>
+                            <script>
+                                for (let i = 1980; i <= 2024; i++) {
+                                    document.write(`<option value="${i}">${i}</option>`);
+                                }
+                            </script>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea name="address" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text" name="city" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td>Pin Code:</td>
+                    <td><input type="text" name="pincode" maxlength="6"></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><input type="text" name="state" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><input type="text" name="country" value="India"></td>
+                </tr>
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="Listeing"> Listeing
+                        <input type="checkbox" name="hobby" value="Watching movies">Watching movies
+                        <input type="checkbox" name="hobby" value="Dancing">  Dancing
+                        <input type="checkbox" name="hobby" value="Playing games"> Playing games
+                        <br>
+                        Others: <input type="text" name="other_hobbies">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qualification:</td>
+                    <td>
+                        <select name="qualification">
+                            <option value="High School">High School (10th)</option>
+                            <option value="Higher Secondary">Higher Secondary (12th)</option>
+                            <option value="Graduation">Graduation (Bachelors)</option>
+                            <option value="Post Graduation">Post Graduation (Masters)</option>
+                            <option value="PhD">PhD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Courses Applied For:</td>
+                    <td>
+                        <select name="course">
+                            <option value="BCA">BCA (Bachelor of Computer Applications)</option>
+                            <option value="B.Com">B.Com (Bachelor of Commerce)</option>
+                            <option value="B.Sc">B.Sc (Bachelor of Science)</option>
+                            <option value="BA">BA (Bachelor of Arts)</option>
+                            <option value="MCA">MCA (Master of Computer Applications)</option>
+                            <option value="M.Com">M.Com (Master of Commerce)</option>
+                            <option value="M.Sc">M.Sc (Master of Science)</option>
+                            <option value="MA">MA (Master of Arts)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2 ">
+                        <input type="submit" class="btn" value="Submit">
+                        <input type="reset" class="btn" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+
+
+
+
+
+
+
+    
+</body>
+</html>

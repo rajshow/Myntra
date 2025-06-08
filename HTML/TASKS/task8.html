@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #30336b, #22a6b3);
+      color: white;
+      padding: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 20px;
+    }
+    th, td {
+      border: 1px solid #fff;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    .dark-table {
+      background-color: #2f3640;
+    }
+    .dark-table th {
+      background-color: #40739e;
+    }
+    .dark-table td {
+      background-color: #34495e;
+    }
+    .light-table {
+      background-color: yellow;
+      color: black;
+    }
+    .light-table th {
+      background-color: #d1d100;
+    }
+    .light-table td {
+      background-color: #f7f77d;
+    }
+  </style>
+</head>
+<body>
+  <h2>Dark Themed Table</h2>
+  <table class="dark-table">
+    <tr>
+      <th>Header Column 1</th>
+      <th>Header Column 2</th>
+      <th>Header Column 3</th>
+      <th>Header Column 4</th>
+    </tr>
+    <tr>
+      <td>Row 2 - Item 1</td>
+      <td>Row 2 - Item 2</td>
+      <td rowspan="2">Nested Table</td>
+      <td>Row 2 - Item 4<br>A Second Line</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td>Row 1 Header</td>
+            <td>item</td>
+          </tr>
+          <tr>
+            <td>Row 2 Header</td>
+            <td>item</td>
+          </tr>
+        </table>
+      </td>
+      <td>Row 3 - Item 3</td>
+    </tr>
+    <tr>
+      <td>Row 4 - Item 1</td>
+      <td>Row 4 - Item 2</td>
+      <td>Row 4 - Item 3</td>
+      <td>Row 4 - Item 4</td>
+    </tr>
+    <tr>
+      <td colspan="4">Row 5 - Last Row of Outer Table</td>
+    </tr>
+  </table>
+
+  <h2>Light Themed Table</h2>
+  <table class="light-table">
+    <tr>
+      <th colspan="5">ACC</th>
+    </tr>
+    <tr>
+      <th>Column header 1a</th>
+      <th>Column header 1b</th>
+      <th>Column header 1c</th>
+      <th>Column header 1d</th>
+    </tr>
+    <tr>
+      <td>Row header 2a</td>
+      <td>Data col 1<br>row 1</td>
+      <td>Data col 2<br>row 2</td>
+      <td>Data col 3<br>row 3</td>
+    </tr>
+    <tr>
+      <td>Summary Sub-Total</td>
+      <td>Total 1a</td>
+      <td>Total 2a</td>
+      <td>Total 3a</td>
+    </tr>
+    <tr>
+      <td>Grand Total</td>
+      <td colspan="3">Grand-Total</td>
+    </tr>
+  </table>
+</body>
+</html>

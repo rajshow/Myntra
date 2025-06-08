@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal and Vertical Table</title>
+    <style>
+        
+        .table1{
+            display: flex;
+        }
+        .horizontal-table {
+            width: 45%;
+            border-collapse: collapse;
+            margin: 50px;
+        }
+        .horizontal-table th, .horizontal-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .vertical-table {
+            width: 45%;
+            border-collapse: collapse;
+        }
+        .vertical-table th, .vertical-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- Horizontal Table (Left Side) -->
+    <h1><center>TABLES</center></h1>
+    <div class="table1">
+    <div>
+    <table class="horizontal-table">
+        <tr>
+            <th>S.no</th>
+            <th>NAME</th>
+            <th>MAIL</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>RAJU</td>
+            <td>0015rajkumar@gmail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>SREE</td>
+            <td>sree@123</td>
+        </tr>
+    </table>
+    </div>
+
+    <!-- Vertical Table (Right Side) -->
+    <div >
+    
+    <table class="vertical-table">
+        <tr>
+            <th>Header</th>
+            <td>Value 1</td>
+        </tr>
+        <tr>
+            <th>Header</th>
+            <td>Value 2</td>
+        </tr>
+        <tr>
+            <th>Header</th>
+            <td>Value 3</td>
+        </tr>
+    </table>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+   <style>
+    @import url('https://images.search.yahoo.com/search/images;_ylt=AwrO6en8P8dnOQIAOSNXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=Adventure+images&fr2=piv-web&type=E210US714G0&fr=mcafee#id=1&iurl=https%3A%2F%2Frare-gallery.com%2Fuploads%2Fposts%2F817279-Adventure-tourism-Mountains-Men-Mountaineering-Climber.jpg&action=click');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary : #536942
+    --secoundary: #FFD936
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    color:#248444 ;
+}
+#main{
+    background-image: url(../images/img1.png);
+    min-height: 100vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+section{
+    margin: 80px auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlist{
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+}
+.navlist a{
+    color: white;
+}
+.btn{
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.sec{
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+}
+.primary{
+    background: none;
+    background: yellow;
+    color:#536942 ;
+}
+.maincon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    color: white;
+}
+.maincon .intro{
+    font-size: 50px;
+}
+.maincon .maihead{
+    font-size: 110px;
+    margin-top: -20px;
+}
+.maincon p{
+    max-width: 250px;
+    border-bottom: 10px;
+}
+.menubtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+    width: 30px;
+}
+.sectit h1{
+    font-size: 50px;
+    text-align: center;
+
+}
+.sectit .line{
+    width: 150px;
+    height: 4px;
+    border: 10px;
+    background: darksalmon;
+    margin: auto;
+}
+.services{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:16px ;
+}
+.service{
+    width: 350px;
+}
+.service img{
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.service img:hover{
+    transform: scale(1.09);
+}
+#testimonial{
+    background: rgb(243, 225, 225);
+}
+#testimonial .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    gap: 30px;
+}
+#testimonial h1{
+    font-size:30px;
+    font-family: 'forum', sans-serif;
+    text-align: center;
+    padding: 50px 16px;
+}
+#testimonial .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#aboutus .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+#aboutus .container .aboutcontent{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+}
+#aboutus .container .aboutcontent h1{
+    font-family: 'Forum',sans-serif;
+    font-size: 30px;
+}
+#query{
+    min-height: 500px;
+    background-image: url(./img/main-2.png);
+    background-position: bottom center;
+    background-size: cover;
+}
+#query .container{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content:center ;
+    height: 500px;
+    text-align: center;
+}
+#query h1{
+    font-size: 50px;
+
+}
+footer{
+    margin-top: -60px;
+}
+footer .container{
+    display: flex;
+    padding: 20px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerlinks{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+
+
+
+@media screen and (max-width:520px){
+    .menubtn{
+        display: block;
+    }
+    .navlist{
+        flex-direction: column;
+        background: gray;
+        position: absolute;
+        top: 0;
+        right: -900px;
+        height: 100vh;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navlist.active{
+        right: 0;
+    }
+    .navlist li:not(:last-child){
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 1px solid white;
+
+    }
+    #aboutus .container{
+        flex-direction: column;
+        gap:30px ;
+    }
+    footer .container{
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+   </style>
+</head>
+<body>
+    <div id="main">
+        <div class="container">
+            <nav>
+                <img src="../images/img1.png" alt="" class="logo">
+                <ul class="navlist">
+                    <li><a style=" color: crimson;" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button style="color: black;" class="btn sec">+91-7569385887</button></li>
+                </ul>
+                <img src="./img/menu.svg" alt="" class="menubtn">
+                
+            </nav>
+            <div class="maincon">
+                <h1 class="intro">SO LIVING  </h1>
+                <h1 class="maihead">ADVENTURE</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae culpa quasi nesciunt eveniet, odio et. Eius, perspiciatis earum quam fugit minima, eligendi laborum amet tempora numquam, libero itaque voluptatibus provident!.</p>
+                <button class="btn primary">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <section id="services">
+        <div class="container">
+            <div class="sectit">
+                <h1>My webpage</h1>
+                <div class="line"></div>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <img src="../DEPLOY/img7.png" alt="">
+                    <h3>Solo trip</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex officiis sapiente esse hic sequi ad accusamus dolorum tempora aliquid odit voluptas eaque, porro iusto id exercitationem perspiciatis dolorem impedit deleniti!.</p>
+                </div>
+                <div class="service">
+                    <img src="../DEPLOY/img 9.png" alt="">
+                    <h3>Water adventure</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repellendus, a animi repellat labore fugiat veritatis. Sapiente ea quaerat explicabo rem ipsum, dolorem, dolorum maiores dolor amet, obcaecati libero ipsam?.</p>
+                </div>
+                <div class="service">
+                    <img src="../images/img4.png" alt="">
+                    <h3>My Creation</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci enim nam quaerat non, sint architecto voluptatem fugiat exercitationem tenetur quo necessitatibus earum iste eius nobis unde repellat? Sit, autem aliquid!.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div class="container">
+            <img src="../images/img5.png" alt="">
+            <h1>"solo living is best nature and best peace"</h1>
+            <div class="profile">
+                <img src="../images/img6.png" alt="">
+                <h4>solo leveling</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutus">
+        <div class="container">
+            <div class="aboutcontent">
+                <h4>ABOUT US</h4>
+                <h1>best peaceful and adventure</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt blanditiis praesentium eaque totam molestias animi, illum nostrum repudiandae, suscipit ullam quas aliquid eum. Facere, illo dolorum dicta similique ipsum nesciunt?.</p>
+                <button class="btn primary">Let;s Go </button>
+            </div>
+            <div class="aboutimg">
+                <img src="../images/img1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="query">
+        <div class="container">
+            <h1>QUERY??</h1>
+            <p>Whether you're curious about features , a free trial, or even press, we're here to answer any questions.</p>
+            <button class="btn primary">Solo adventure</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <ul class="footerlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="../images/img2.png" alt="" class="footerlogo">
+            <p>Go and enjoy your life</p>
+        </div>
+    </footer>
+    <script>
+        const navBtn=document.querySelector('.menubtn')
+        const navList= document.querySelector('.navlist')
+
+        navBtn.addEventListener('click',function (){
+            navList.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>
